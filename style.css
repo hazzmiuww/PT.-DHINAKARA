@@ -3,6 +3,19 @@ html {
 
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+    .container {
+        padding: 10px; /* Padding lebih kecil */
+    }
+    .header, .footer {
+        text-align: center; /* Rata tengah untuk header dan footer */
+    }
+    /* Tambahkan gaya lain yang diperlukan */
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-snap-type: y mandatory;
