@@ -13,9 +13,44 @@ body {
 
 }
 
+
+#line {
+    width: 100px;
+    height: 5px;
+    background-color: rgb(207, 235, 52);
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 40%;
+    padding: 80px;
+    visibility: visible;
+    box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 16px;
+    gap: 16px;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateX(+7c0px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.box.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 span {
     color: blue;
     font-weight: bold;
+}
+
+h3,h2 {
+    color: (49, 76, 230);
 }
 
 /*
@@ -174,83 +209,63 @@ a {
     }
 }
 
-
-/*
-------------------------------------------------------------------------------------------------------------------------------------------
-Content
-------------------------------------------------------------------------------------------------------------------------------------------
-*/
-
-.content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 80px;
-    padding: 40px 120px;
-}
-
-.briefProfile{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    text-align: justify;
-    
-}
-
-#isiProfil{
-    font-size: 16px;
-}
-
-#profilPerusahaan{
-    color: rgba(49, 76, 230);
-    font-size: 32px;
-    margin: 0px;
-    font-weight: bolder;
-}
-
-.image {
-    display: flex;
-    flex-basis: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
-p{
-    margin: 4px;
-    
-}
-
 /*
 ------------------------------------------------------------------------------------------------------------------------------------------
 Service
 ------------------------------------------------------------------------------------------------------------------------------------------
 */
 
-#quote{
-    margin-bottom: 30px;
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 80px;
+    padding: 40px 120px;
 }
-h2 {
-    font-weight: bold;
-    font-size: 36px;
-    padding-left: 150px;
+
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    justify-content: space-evenly;
+    gap: 24px;
+    text-align: justify;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.explanation {
+    font-size: 18px;
+}
+
+#quote {
     color: rgba(49, 76, 230);
+    font-size: 25px;
 }
 
-#line {
-    width: 100px;
-    height: 5px;
-    background-color: rgb(207, 235, 52);
-    margin-left: 150px;
+.content {
+    flex-basis: 50%;
 }
 
-.service{
+/*
+------------------------------------------------------------------------------------------------------------------------------------------
+Box
+------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.layanan{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
     margin: 60px;
 }
-
 .box{
     display: flex;
     flex-direction: row;
@@ -288,44 +303,7 @@ h3 {
 }
 
 .container p {
-    font-size: 14px;
-}
-
-/*
-------------------------------------------------------------------------------------------------------------------------------------------
-Contact
-------------------------------------------------------------------------------------------------------------------------------------------
-*/
-
-.contact{
-    display: flex;
-    justify-content: space-around;
-    margin: 48px;
-    padding: 24px;
-    gap: 48px;
-}
-
-.box#address,
-.box#email,
-.box#call {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 30%;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-}
-
-.caption {
-    font-size: 32px;
-    font-weight: 700;
-    color: #464644d2;
-}
-
-.definition {
     font-size: 15px;
-    font-weight: 500;
-    text-align: center;
 }
 
 /*
@@ -343,5 +321,5 @@ Footer
     margin: auto;
     color: rgb(255, 255, 255);
     font-size: 14px;
-    background-color: rgba(49, 76, 230);
+    background-color: #314ce6;
 }

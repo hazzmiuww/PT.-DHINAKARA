@@ -44,7 +44,7 @@ ul {
     gap: 16px;
     justify-content: space-between;
     opacity: 0;
-    transform: translateX(+70px);
+    transform: translateX(+7c0px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
